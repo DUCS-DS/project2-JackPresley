@@ -115,7 +115,7 @@ while not quit:
                    screen, blue((thresh - d_squared) / thresh), (x1, y1), (x2, y2)
                )
 
-   clock.tick(120)
+   clock.tick(60)
    pygame.display.flip()
    print(clock.get_fps())
 
