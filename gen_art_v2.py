@@ -117,7 +117,7 @@ while not quit:
 
    clock.tick(60)
    pygame.display.flip()
-   print(clock.get_fps())
+   print(f"FPS: {round(clock.get_fps())}")
 
 pygame.quit()
 
