@@ -80,7 +80,7 @@ for i in range(num_nodes):
    nodes.append(Node(x, y, speed, angle))
 
 
-def get_x(node):
+def getX(node):
    return node.x
 
 quit = False
@@ -102,7 +102,7 @@ while not quit:
        node.reflect()
        node.draw()
 
-   SortedNodes = sorted(nodes, key=get_x)
+   SortedNodes = sorted(nodes, key=getX)
 
    for i, node1 in enumerate(SortedNodes):
        for j in range(i + 1, min(i + 20, len(SortedNodes))):
