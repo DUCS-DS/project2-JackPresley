@@ -102,11 +102,11 @@ while not quit:
        node.reflect()
        node.draw()
 
-   nodes.sort(key=get_x)
+   SortedNodes = sorted(nodes, key=get_x)
 
-   for i, node1 in enumerate(nodes):
-       for j in range(i + 1, min(i + 20, len(nodes))):
-           node2 = nodes[j]
+   for i, node1 in enumerate(SortedNodes):
+       for j in range(i + 1, min(i + 20, len(SortedNodes))):
+           node2 = SortedNodes[j]
            x1, y1 = node1.x, node1.y
            x2, y2 = node2.x, node2.y
            d_squared = (x1 - x2) ** 2 + (y1 - y2) ** 2
